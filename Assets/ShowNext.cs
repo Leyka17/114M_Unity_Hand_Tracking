@@ -29,7 +29,7 @@ public class ShowNext : MonoBehaviour
     {
         if (Object1.activeInHierarchy == false)
         {
-            Object2.SetActive(true);
+            Object1.SetActive(true);
             Object1.GetComponent<Animator>().Play("MotherBoard_Up_Down");
         }
         else if (Object2.activeInHierarchy == false)
