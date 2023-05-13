@@ -50,45 +50,51 @@ public class ShowNext : MonoBehaviour
             Object4.GetComponent<Animator>().Play("CPU_Up_Down");
             Object3.GetComponent<Animator>().Play("Static");
         }        
-        // else if (Object5.activeInHierarchy == false)
+        else if (Object5.activeInHierarchy == false)
+        {
+            Object5.SetActive(true);
+            Object5.GetComponent<Animator>().Play("ssd_Up_Down");
+            Object4.GetComponent<Animator>().Play("Static");
+        }        
+        else if (Object6.activeInHierarchy == false)
+        {
+            Object6.SetActive(true);
+            Object6.GetComponent<Animator>().Play("RAM_Up_Down");
+            Object5.GetComponent<Animator>().Play("Static");
+        }        
+        else if (Object7.activeInHierarchy == false)
+        {
+            Object7.SetActive(true);
+            Object7.GetComponent<Animator>().Play("GPU_Up_Down");
+            Object6.GetComponent<Animator>().Play("Static");
+        }        
+        else if (Object8.activeInHierarchy == false)
+        {
+            Object8.SetActive(true);
+            Object8.GetComponent<Animator>().Play("hdd_Up_Down");
+            Object7.GetComponent<Animator>().Play("Static");
+        }        
+        else if (Object9.activeInHierarchy == false)
+        {
+            Object9.SetActive(true);
+            Object9.GetComponent<Animator>().Play("Cooler_plate_Up_Down");
+            Object8.GetComponent<Animator>().Play("Static");
+        }        
+        else if (Object10.activeInHierarchy == false)
+        {
+            Object10.SetActive(true);
+            Object10.GetComponent<Animator>().Play("Cooler_Fan_Up_Down");
+            Object9.GetComponent<Animator>().Play("Static");
+        }        
+        else //if (Object11.activeInHierarchy == false)
+        {
+            // Object11.SetActive(true);
+            // Object11.GetComponent<Animator>().Play("Chasis_lid_Up_Down");
+            Object10.GetComponent<Animator>().Play("Static");
+        }
+        // else
         // {
-        //     Object5.SetActive(true);
-        //     Object5.GetComponent<Animator>().Play("CoolerBlock_Up_Down");
-        //     Object4.GetComponent<Animator>().Play("Power_Static");
-        // }        
-        // else if (Object6.activeInHierarchy == false)
-        // {
-        //     Object6.SetActive(true);
-        //     Object6.GetComponent<Animator>().Play("CoolerBlock_Up_Down");
-        //     Object5.GetComponent<Animator>().Play("Power_Static");
-        // }        
-        // else if (Object7.activeInHierarchy == false)
-        // {
-        //     Object7.SetActive(true);
-        //     Object7.GetComponent<Animator>().Play("CoolerBlock_Up_Down");
-        //     Object6.GetComponent<Animator>().Play("Power_Static");
-        // }        
-        // else if (Object8.activeInHierarchy == false)
-        // {
-        //     Object8.SetActive(true);
-        //     Object8.GetComponent<Animator>().Play("CoolerBlock_Up_Down");
-        //     Object7.GetComponent<Animator>().Play("Power_Static");
-        // }        
-        // else if (Object9.activeInHierarchy == false)
-        // {
-        //     Object9.SetActive(true);
-        //     Object9.GetComponent<Animator>().Play("CoolerBlock_Up_Down");
-        //     Object8.GetComponent<Animator>().Play("Power_Static");
-        // }        
-        // else //if (Object10.activeInHierarchy == false)
-        // {
-        //     // Object10.SetActive(true);
-        //     // Object10.GetComponent<Animator>().Play("CoolerBlock_Up_Down");
-        //     Object9.GetComponent<Animator>().Play("Power_Static");
-        // }        
-        // else 
-        // {
-        //     Object10.GetComponent<Animator>().Play("Power_Static");
+        //     Object11.GetComponent<Animator>().Play("Static");
         // }
     }
 }
