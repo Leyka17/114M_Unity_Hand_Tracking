@@ -66,7 +66,6 @@ public class ShowPrev : MonoBehaviour
             Object5.SetActive(false);
         }   
         else if (Object4.activeInHierarchy == true)        
-        // if (Object4.activeInHierarchy == true)
         {
             Object3.GetComponent<Animator>().Play("CoolerBlock_Up_Down");
             Object4.SetActive(false);
