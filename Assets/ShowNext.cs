@@ -71,7 +71,7 @@ public class ShowNext : MonoBehaviour
         else if (Object8.activeInHierarchy == false)
         {
             Object8.SetActive(true);
-            Object8.GetComponent<Animator>().Play("hdd_Up_Down");
+            Object8.GetComponent<Animator>().Play("hdd_baked_Up_Down");
             Object7.GetComponent<Animator>().Play("Static");
         }        
         else if (Object9.activeInHierarchy == false)

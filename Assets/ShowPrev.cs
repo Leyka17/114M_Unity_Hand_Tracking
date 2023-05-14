@@ -41,7 +41,7 @@ public class ShowPrev : MonoBehaviour
         else if (Object9.activeInHierarchy == true)
         {
             
-            Object8.GetComponent<Animator>().Play("hdd_Up_Down");
+            Object8.GetComponent<Animator>().Play("hdd_baked_Up_Down");
             Object9.SetActive(false);
         }   
         else if (Object8.activeInHierarchy == true)
